@@ -1,0 +1,96 @@
+/* DIYOR CODE YOU TUBE CHANNEL*, */
+
+::before,
+::after {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 97vh;
+}
+
+/* CARD */
+
+.card {
+  border: 2px solid white;
+  box-shadow: 0px 0px 5px white;
+  padding: 2em;
+  max-width: 250px;
+  width: 100%;
+  text-align: center;
+  height: 45vh;
+  margin: auto;
+  font-size: 18px;
+  background: black;
+  transition: 1.5s ease;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: rotateY(0.5turn);
+}
+.card .content {
+  transform-style: preserve-3d;
+  transition: 1s ease;
+}
+
+.card .back,
+.card .front {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  text-shadow: 0 0 5px black;
+}
+
+.card .back {
+  transform: rotateY(0.5turn);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card p,
+.card h2 {
+  transform: translateZ(100px);
+}
+
+.card p {
+  font-size: 1em;
+  line-height: 1.6em;
+}
+
+.card h2 {
+  margin: 0 0 20px 0;
+  font-size: 2.25em;
+}
+
+.card::before,
+.card::after {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background: url(https://img.freepik.com/free-vector/night-rice-field-terraces-asian-mountains-landscape-with-paddy-plantation-cascades-chinese-agricultural-farm-dark-starry-sky-with-full-moon-glowing-fireflies-cartoon-vector-illustration_107791-10584.jpg?w=1380&t=st=1661917598~exp=1661918198~hmac=a0d965cd60356d79a73e280f5cc0a264eb2ecf00c77d870e0fd866984d4faf72);
+  transform: rotateY(0.5turn) translateZ(1px);
+}
+
+.card::before {
+  transform: none;
+  background: url(https://img.freepik.com/free-vector/asian-rice-field-terraces-morning-mountains-landscape-paddy-plantation-cascades-farm-mount-water-channel-with-growing-plants-scenery-meadow-with-green-grass-cartoon-vector-illustration_107791-10452.jpg?w=1380&t=st=1661917467~exp=1661918067~hmac=fcd8e64a15f4900ad755025fb1a92198196dcc22911435ae660d9185203ddfca);
+}
+
+/* DIYOR CODE YOU TUBE CHANNEL */
